@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Osprey TDD Framework">
+    <test name="Running with packages">
+        <packages>
+            <package name="tek.tdd.test.regression"/>
+        </packages>
+    </test>
+    <test name="Running with Smoke">
+        <classes>
+            <class name="tek.tdd.test.smoke.SetupTests"/>
+            <class name="tek.tdd.test.regression.SecurityTest"/>
+        </classes>
+    </test>
+
+</suite>
+
+<!--
+<test name="Running 1 test method">
+            <classes>
+                <class name="tek.tdd.test.regression.SecurityTest">
+                    <methods>
+                        <include name="validateLoginWithValidCredentials"/>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+-->
